@@ -13,9 +13,9 @@ public class Scan {
         String[] array = s.split(" ");// массив строк
 
 
-        sum = Double.valueOf(array[0]);
-        payment= Double.valueOf(array[1]);
-        percent = Double.valueOf(array[2]);
+        sum = Double.parseDouble(array[0]);
+        payment= Double.parseDouble(array[1]);
+        percent = Double.parseDouble(array[2]);
         client = array[3];
 
         if (sum <= 0 || payment <= 0 || percent <= 0) {
