@@ -13,7 +13,7 @@ public class Сalculate {
         } else {
             throw new MyExeption();
         }
-        do {
+        while (sum > 0) {
 
             cost = cost + sum * percent / 100;
             //System.out.println("переплата по процентам = " + cost);
@@ -25,7 +25,7 @@ public class Сalculate {
 //            System.out.println("переплата по процентам = " + cost);
 
 
-        } while (sum > 0);
+        }
 
         return cost;
     }
