@@ -1,17 +1,16 @@
 public class Сalculate {
     public double cost;
 
-    public double calc(double sum, double payment, double percent, String client) throws MyExeption {
-        double cost = 0;
+    public double calc(double sum, double payment, double percent, String client) throws WrongInput {
         if (payment * 12 <= sum * percent / 100) {
-            throw new MyExeption();
+            throw new WrongInput("Кредит невозможно выплатить, такой лучше не брать.");
         }
         if (client.equals("human")) {
-            sum = sum;
+
         } else if (client.equals("business")) {
             sum = sum - payment * 12;
         } else {
-            throw new MyExeption();
+            throw new WrongInput("Неверный ввод типа клиета! Введите human или business.");
         }
         while (sum > 0) {
 

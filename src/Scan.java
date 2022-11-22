@@ -5,7 +5,7 @@ public class Scan {
     double payment;
     double percent;
     String client;
-    public void scanone() throws MyExeption {
+    public void Inputdata () throws WrongInput {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите сумму, ежемесячный платёж, процент, тип клиента");
@@ -19,7 +19,7 @@ public class Scan {
         client = array[3];
 
         if (sum <= 0 || payment <= 0 || percent <= 0) {
-            throw new MyExeption();
+            throw new WrongInput("Неверный ввод данных! Введите корректные значения суммы кредита, ежемесячного платежа, процентную ставку.");
         }
 
     }
