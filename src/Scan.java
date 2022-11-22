@@ -5,7 +5,7 @@ public class Scan {
     double payment;
     double percent;
     String client;
-    public void Inputdata () throws WrongInput {
+    public void GetInputdata () throws WrongInput {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите сумму, ежемесячный платёж, процент, тип клиента");
