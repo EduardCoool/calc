@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) throws WrongInput {
-        Scan creditInfo = new Scan(); // обявление объекта класса
-        CreditData info = creditInfo.getInputData();
+        Scan creditInfoInput = new Scan(); // обявление объекта класса
+        CreditData SavedDataCredit = creditInfoInput.getInputData();
         Сalculate service = new Сalculate();
 
 
-        System.out.println("Переплата по процентам = " + service.calc(info.getSum(), info.getPayment(),  info.getPercent(),  info.getClient()));
+        System.out.println("Переплата по процентам = " + service.calc(SavedDataCredit.getSum(), SavedDataCredit.getPayment(),  SavedDataCredit.getPercent(),  SavedDataCredit.getClient()));
 
 
 
