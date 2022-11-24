@@ -1,19 +1,18 @@
 public class Сalculate {
     public double cost;
 
-    public double calc(double sum, double payment, double percent, String client) throws WrongInput {
-        if (client.equals("business")) {
-            sum = sum - payment * 12;
+
+    public double calc(double sumcredit, double paymentcredit, double percentcredit, String clientcredit) throws WrongInput {
+        if (clientcredit.equals("business")) {
+            sumcredit = sumcredit - paymentcredit * 12;
         }
-        while (sum > 0) {
+        while (sumcredit > 0) {
 
-            cost = cost + sum * percent / 100;
-            //System.out.println("переплата по процентам = " + cost);
+            cost = cost + sumcredit * percentcredit / 100;
 
-            sum = sum - payment * 12 + cost;
-            //System.out.println("сумма долга = " + sum);
 
-//            System.out.println("переплата по процентам = " + cost);
+            sumcredit = sumcredit - paymentcredit * 12 + cost;
+
         }
         return cost;
     }
