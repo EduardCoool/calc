@@ -11,7 +11,7 @@ public class Scan {
         String s = in.nextLine();
         String[] array = s.split(" ");// массив строк
 
-        CreditData dataAboutCredit = new CreditData(Double.parseDouble(array[0]),Double.parseDouble(array[1]),Double.parseDouble(array[2]),array[3] );
+        CreditData dataAboutCredit = new CreditData(Double.parseDouble(array[0]), Double.parseDouble(array[1]), Double.parseDouble(array[2]), array[3]);
 
         if (dataAboutCredit.getSum() <= 0 || dataAboutCredit.getPayment() <= 0 || dataAboutCredit.getPercent() <= 0) {
             throw new WrongInput("Неверный ввод данных! Введите корректные значения суммы кредита, ежемесячного платежа, процентную ставку.");
@@ -22,7 +22,7 @@ public class Scan {
 
 
         }
-        return dataAboutCredit ;
+        return dataAboutCredit;
     }
 
 
