@@ -4,11 +4,6 @@ public class CreditData {
     private double percent;
     private String client;
 
-    public CreditData(){
-
-    }
-
-
     public double getSum() {
         return sum;
     }
@@ -40,5 +35,4 @@ public class CreditData {
     public void setClient(String client) {
         this.client = client;
     }
-
 }

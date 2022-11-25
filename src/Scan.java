@@ -25,8 +25,6 @@ public class Scan {
         } else if (!Objects.equals(dataAboutCredit.getClient(), "human") &&
                 !Objects.equals(dataAboutCredit.getClient(), "business")) {
             throw new WrongInput("Неверный ввод типа клиета! Введите human или business.");
-
-
         }
         return dataAboutCredit;
     }
