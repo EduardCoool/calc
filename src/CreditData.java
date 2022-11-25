@@ -4,17 +4,10 @@ public class CreditData {
     private double percent;
     private String client;
 
-    public CreditData(double sum, double payment, double percent, String client) {
-        this.sum = sum;
-        this.payment = payment;
-        this.percent = percent;
-        this.client = client;
+    public CreditData(){
 
     }
 
-    public CreditData() {
-
-    }
 
     public double getSum() {
         return sum;
